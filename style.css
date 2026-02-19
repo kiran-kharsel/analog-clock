@@ -119,4 +119,5 @@ body {
     height: 45%;
     width: 4px;
     color: red;
+    transition: 1s linear;
 }
