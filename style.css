@@ -101,17 +101,18 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transform-origin: bottom;
+    border: 1px solid white;
 }
 
 .clock .clock-hand.hour{
-    height: 35%;
+    height: 30%;
     width: 10px;
     background-color: black;
 }
 
 .clock .clock-hand.minute{
-    height: 40%;
-    width: 7px;
+    height: 38%;
+    width: 6px;
     background-color: black;
 }
 
@@ -120,4 +121,15 @@ body {
     width: 4px;
     color: red;
     transition: 1s linear;
+}
+
+
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clock .clock-hand.second{
+  animation: rotate 60s linear infinite;
 }
